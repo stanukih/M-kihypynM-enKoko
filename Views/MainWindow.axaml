@@ -35,6 +35,14 @@
                     Increment="1"
                 />
             </StackPanel>
+            <StackPanel Margin="20">
+                <Label Content="Hyviyspiste"/>
+                <NumericUpDown
+                    ButtonSpinnerLocation="Right"
+                    Value="{Binding hyviyspiste}"
+                    Increment="1"
+                />
+            </StackPanel>
         </StackPanel>
         
         <StackPanel>

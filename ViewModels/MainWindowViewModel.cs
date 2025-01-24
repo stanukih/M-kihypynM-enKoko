@@ -19,6 +19,7 @@ public partial class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
     }
     public int kpiste { get; set; }
     public int hypynPituus { get; set; }   
+    public decimal hyviyspiste {get; set;}
     
 
     public MainWindowViewModel()
@@ -42,20 +43,11 @@ public partial class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
 
         decimal kerroin = 1;
 
-        if (kpiste > 100)
-            kerroin *= (decimal)1.8;
-        else
-        {
-            kerroin *= (decimal)1.8;
-        }
-
-        
-
         decimal summaTuomoritPisteet1 = summaTuomoritPisteet();
         Res += $"Tuomorien pisteet {summaTuomoritPisteet1}"+Environment.NewLine;
         decimal summaTuulihyvitysPisteet1 = summaTuulihyvitysPisteet();
         Res += $"Tuulet boonus {summaTuulihyvitysPisteet1}"+Environment.NewLine;
-        hypynPituusPisteet += 60+(hypynPituus-kpiste)*kerroin;
+        hypynPituusPisteet += 60+(hypynPituus-kpiste)*hyviyspiste;
         Res += $"Pituus bonuus {hypynPituusPisteet}"+Environment.NewLine;
         Res += $"Yhteensä pistettä {summaTuomoritPisteet1+summaTuulihyvitysPisteet1+hypynPituusPisteet}"+Environment.NewLine;
 
@@ -72,7 +64,7 @@ public partial class MainWindowViewModel : ViewModelBase, INotifyPropertyChanged
         
         decimal keskiSummaTuulihyvitys = summaTuulihyvitys /= 5;
 
-        return keskiSummaTuulihyvitys * (kpiste - 36) / 20 * (decimal)1.8;
+        return keskiSummaTuulihyvitys * (kpiste - 36) / 20 * (decimal)hyviyspiste;
     }
 
     public decimal summaTuomoritPisteet()

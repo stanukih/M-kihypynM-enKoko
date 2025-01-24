@@ -65,3 +65,4 @@ C:\Users\215776\RiderProjects\MäkihypynTyylipisteet\bin\Debug\net9.0\runtimes\w
 C:\Users\215776\RiderProjects\MäkihypynTyylipisteet\obj\Debug\net9.0\M_kihypy.E71C450C.Up2Date
 C:\Users\215776\RiderProjects\MäkihypynTyylipisteet\obj\Debug\net9.0\MäkihypynTyylipisteet.genruntimeconfig.cache
 C:\Users\215776\RiderProjects\MäkihypynTyylipisteet\obj\Debug\net9.0\ref\MäkihypynTyylipisteet.dll
+C:\Users\215776\RiderProjects\MäkihypynTyylipisteet\obj\Debug\net9.0\MäkihypynTyylipisteet.sourcelink.json

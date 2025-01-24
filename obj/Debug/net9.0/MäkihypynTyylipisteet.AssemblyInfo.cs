@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MäkihypynTyylipisteet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0715fadb980e628b90ba36ccdec1f9f1db1c2988")]
 [assembly: System.Reflection.AssemblyProductAttribute("MäkihypynTyylipisteet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MäkihypynTyylipisteet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
